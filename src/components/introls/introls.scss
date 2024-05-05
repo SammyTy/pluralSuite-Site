@@ -1,0 +1,129 @@
+.introls{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px;
+    padding-top: 240px;
+    background-image: url("../../assets/bgImg/bgImg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(46, 2, 48, 0.704);
+    background-blend-mode: overlay; 
+    z-index: 9;
+    // z-index: 1;
+}
+// .introls::before{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: rgba(111, 29, 143, 0.588);
+//     z-index: -1;
+
+// }
+.subItrols{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.subItrols h2{
+    font-weight: 400;
+    font-size: 62px;
+    color: white;
+    text-transform: capitalize;
+}
+.subItrols p{
+    font-size: 18px;
+    color: white;
+    line-height: 28px;
+    text-align: center;
+}
+.prev, .next{
+    position: absolute;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    top: calc(100% - 40%);
+}
+.prev{
+    left: 15%;
+}
+.next{
+    right: 15%;
+}
+
+.bookNow{
+    padding: 26px 28px;
+    background: white;
+    position: absolute;
+    bottom: -46px;
+    box-shadow: 3px 35px 37px 11px rgba(105,96,96,0.15);
+-webkit-box-shadow: 3px 35px 37px 11px rgba(105,96,96,0.15);
+-moz-box-shadow: 3px 35px 37px 11px rgba(105,96,96,0.15);
+}
+.bookNow form{
+    display: flex;
+    gap: 20px;
+}
+.bookNow form select{
+    border: none;
+    outline: none;
+    background: rgb(230, 230, 230);
+    padding: 14px 16px;
+}
+.bookNow form .btn{
+    padding: 14px 28px;
+}
+
+@media only screen and (max-width: 768px) {
+    .subItrols h2{
+        font-size: 32px;
+        color: white;
+        text-transform: capitalize;
+    }
+    .subItrols p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .introls{
+        padding: 100px 20px;
+        padding-bottom: 140px;
+    
+    }
+    .prev, .next{
+        top: calc(100% - 60%);
+    }
+    .prev{
+        left: 1%;
+    }
+    .next{
+        right: 1%;
+    }
+    .bookNow{
+        padding: 14px;
+         bottom: -18px;
+    }
+    .bookNow form{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+    
+    }
+    .bookNow form select{
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .bookNow form .btn{
+        padding: 8px 28px;
+    }
+}
