@@ -1,0 +1,87 @@
+@import "../../global.scss";
+@import "../../styles/mixins";
+
+.wlcPage{
+    padding: 100px 20px;
+}
+.wlcItrols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+}
+.wlcHedins{
+    @include flex-center(column);
+    position: relative;
+}
+.wlcHedins span{
+    font-size: 90px;
+    font-stretch:expanded;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.095);
+
+}
+.wlcHedins h2{
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch:expanded;
+    text-transform: capitalize;
+    color: $main-color;
+
+}
+.wlcItrols p{
+    margin-top: 38px;
+    margin-bottom: 28px;
+    text-align:center;
+    font-size: 17px;
+}
+.wlcItrols  .btn{
+    cursor: pointer;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+}
+.imgSecs{
+    display: flex;
+    margin-top: 20px;
+    gap: 25px;
+}
+.imgWrapper{
+    display: flex;
+    gap: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+    .wlcPage{
+        padding: 70px 20px;
+    }
+    .wlcItrols span{
+        font-size: 40px;
+        // font-stretch: normal;
+    }
+    .wlcItrols h2{
+        bottom: -16px;
+        font-size: 15px;
+        font-stretch: normal;
+    
+    }
+    .wlcItrols p{
+        margin-top: 30px;
+        margin-bottom: 28px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .imgSecs{
+        width: 240px;
+        overflow-x: hidden;
+    }
+    .imgWrapper{
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        gap: 0;
+
+    }
+}

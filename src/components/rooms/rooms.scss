@@ -1,0 +1,94 @@
+@import "../../styles/mixins";
+@import "../../global.scss";
+
+.roomsCon{
+    padding: 60px 0px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.roomImg{
+    // max-width: 600px;
+    background-position: center;
+    background-size: contain;
+}
+.roomImg img{
+    width: 100%;
+}
+.rooms{
+    padding: 30px 40px;
+    text-align: left;
+
+}
+.wlcHedin{
+    @include flex-left(column);
+    position: relative;
+}
+.wlcHedin span{
+    font-size: 70px;
+    line-height: 44px;
+    font-stretch:expanded;
+    text-align: left;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.095);
+
+}
+.wlcHedin h2{
+    position: absolute;
+    bottom: -14px;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch:expanded;
+    text-transform: capitalize;
+    color: $main-color;
+
+}
+.rooms > p{
+    margin-top: 30px;
+}
+.rooms p{
+    font-size: 16px;
+    color: rgb(22, 1, 22);
+}
+.details{
+    margin: 15px 0;
+}
+.detailsList{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.detailsList span{
+    color: $main2-color;
+    font-size: 20px;
+}
+.bookins{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.price{
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-end;
+}
+.price span{
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+    font-size: 28px; 
+    font-weight: 500;
+    color: $main2-color;
+}
+.light{
+    background: grey;
+}
+.dark{
+    background: rgb(49, 0, 49);
+}
+@media (max-width: 768px) {
+    .roomsCon {
+        grid-template-columns: 1fr; /* On smaller screens, display one column */
+    }
+}
