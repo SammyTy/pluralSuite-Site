@@ -20,15 +20,15 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="links">
-                <h2>Email</h2>
+                <h2>Phone</h2>
                 <ul>
-                    <li><Link to=''>Pluralsuite@gmail.com</Link></li>
+                    <li><Link to=''>+23458593430023</Link></li>
                 </ul>
             </div>
             <div className="links">
-                <h2>Email</h2>
+                <h2>Address</h2>
                 <ul>
-                    <li><Link to=''>Pluralsuite@gmail.com</Link></li>
+                    <li><Link to=''>Akinyenmi Avenue Lekki</Link></li>
                 </ul>
             </div>
         </div>

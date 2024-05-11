@@ -2,7 +2,7 @@ import "./pageNotReady.scss"
 const padeNotReady = () => {
   return (
     <div className="pageNotReady">
-      <h2>page is currenntly unndner construction</h2>
+      <h2>this page is currently under construction</h2>
     </div>
   )
 }

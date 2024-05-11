@@ -49,8 +49,8 @@ function RoomSuite({roomDetail} : RoomSuiteProps) {
             <p>{roomDetail.description}</p>
             <div className="details">
                 {/* Iterate over the array of objects and create a div for each one */}
-                 {roomDetail.details.map((detail)=>(
-                    <div className="detailsList">
+                 {roomDetail.details.map((detail, index)=>( 
+                    <div className="detailsList" key={index}>
                         <span> <MdOutlineBookmarkAdded /></span>
                         <p>{detail}</p>
                     </div>
