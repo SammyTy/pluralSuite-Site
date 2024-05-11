@@ -2,7 +2,7 @@
 @import "../../global.scss";
 
 .testimonials{
-    background: rgb(227, 232, 213);
+    background: #FDF6EA;
     padding: 70px 18px;
     @include flex-center(column);
     gap:45px;
@@ -11,7 +11,7 @@
     align-items: center;
 }
 .testimonials .wlcHedin span{
-    color: rgba(255, 255, 255, 0.498);
+    color: rgb(255, 255, 255);
 }
 .testimonialwrapper{
     max-width: 900px;
@@ -43,6 +43,9 @@
 }
 .mainTestimonial p{
     margin-bottom: 16px;
+}
+.mainTestimonial h2{
+    color: $font-color;
 }
 .radio{
     margin-top: 20px;

@@ -4,6 +4,7 @@ $main-color: #36043c;
 $main-color-trans: #2a042fde;
 $main2-color: rgb(250, 165, 28);
 $hover-color: rgb(223, 137, 0);
+$font-color: rgb(13, 0, 19);
 :root {  
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -43,6 +44,9 @@ li{
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+p{
+  color: rgb(13, 1, 15);
 }
 .container{
   max-width: 1200px;
