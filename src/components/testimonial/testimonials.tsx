@@ -29,7 +29,7 @@ const testimonials : Testimonial[] = [
         name: "Maria Smith",
         designation: "Clients",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta non illum, voluptas cumque dolorum tenetur eligendi in architecto quam, quibusdam ad quas. In facilis iusto nulla ut quibusdam laudantium necessitatibus.",
-        image: "/public/testimonialsImg/Avatar.png"
+        image: "/public/testimonialsImg/img1.png"
 
     },
 ];
