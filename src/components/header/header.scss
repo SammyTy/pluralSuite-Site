@@ -1,12 +1,13 @@
 @import "../../global";
 
 .header{
+    width: 100vw;
     position: fixed;
     padding-top: 10px;
     left: 0;
     top: 0;
     right: 0;
-    background: $main-color;
+    background: $main-color-trans;
     z-index: 99;
     border-bottom: 2px solid $main2-color;
 }
@@ -161,6 +162,13 @@
     
     .log{
         display: none;
+    }
+    .btn{
+        padding: 12px;
+        color: white;
+        border: 0;
+        font-size: 12px;
+        outline: 0;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

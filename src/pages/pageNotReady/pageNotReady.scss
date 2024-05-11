@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+.pageNotReady{
+    padding: 400px 18px;
+    @include flex-center(row)
+}
+.pageNotReady h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}

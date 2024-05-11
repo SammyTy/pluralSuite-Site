@@ -26,6 +26,7 @@ const roomsDetails2 = {
      Curabitur tempor dignissim massa ut faucibus sollicitudin tinci dunt maximus.
      Morbi tempus malesuada erat sed pellentesque.`,
      price: 90,
+    //  backColor: 
      details: ["malesuada erat sed pellentesque.", "eget tortor dictum, eget varius", "Maecenas sollicitudin tincidunt"]
 }
 
@@ -70,8 +71,12 @@ const Rooms = () => {
       <div className="roomImg">
         <img src={img1} alt="roomImage1" />
       </div>
-      <RoomSuite roomDetail ={roomsDetails1} />
-      <RoomSuite roomDetail ={roomsDetails2} />
+      <div className="room1">
+        <RoomSuite roomDetail ={roomsDetails1} />
+      </div>
+      <div className="room2">
+        <RoomSuite roomDetail ={roomsDetails2} />
+      </div>
       <div className="roomImg">
         <img src={img2} alt="roomImage2" />
       </div>

@@ -33,12 +33,12 @@ function Header() {
                 </div>
               </div>
               <li><Link to="/">home</Link></li>
-              <li><Link to="/">about</Link></li>
-              <li><Link to="/">rooms</Link></li>
+              <li><Link to="/about">about</Link></li>
+              <li><Link to="/rooms">rooms</Link></li>
               <li className="log"><Link to="/" className="logo"><img src={logo} alt="pluralcodelogo"/>  <span>plu ralSuite</span> </Link></li>
-              <li><Link to="/">resto & bars</Link></li>
-              <li><Link to="/">News</Link></li>
-              <li><Link to="/">contact</Link></li>
+              <li><Link to="/resto&bars">resto & bars</Link></li>
+              <li><Link to="/News">News</Link></li>
+              <li><Link to="/contact">contact</Link></li>
             </ul>
           </div>
             <button className="btn">book yourr room today</button>

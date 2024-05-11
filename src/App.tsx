@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import './App.scss';
-import { Header, HomePage } from './index';
+import { About, Footer, Header, HomePage, PageNotReady} from './index';
 
 function App() {
 
@@ -9,8 +9,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<PageNotReady />} />
       </Routes>
+      <Footer />
     </>
   )
 }

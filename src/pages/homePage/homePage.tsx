@@ -1,11 +1,13 @@
-import { About, Introls, Rooms } from "../../index"
+import { About, Discover, Introls, Rooms, Testimonials   } from "../../index"
 
 const HomePage = () => {
   return (
     <>
-      <Introls/>
+      <Introls />
       <About />
       <Rooms />
+      <Discover />
+      <Testimonials />
     </>
   )
 }

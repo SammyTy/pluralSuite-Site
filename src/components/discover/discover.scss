@@ -1,0 +1,100 @@
+@import "../../styles/mixins";
+@import "../../global.scss";
+
+.discover{
+    padding-top: 40px;
+    background: white
+    
+}
+.mainD{
+    @include flex-center("row");
+    gap: 30px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.hotel{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.wlcHedin span{
+    font-size: 90px;
+    line-height: 44px;
+    font-stretch:expanded;
+    text-align: left;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.095);
+
+}
+.wlcHedin h2{
+    position: absolute;
+    bottom: -18px;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: expanded;
+    text-transform: capitalize;
+    color: $main-color;
+    white-space: nowrap;
+}
+.hotel p{
+    padding-top: 30px;
+    text-align: left;
+}
+.hotel .btn{
+    margin-top: 30px;
+    padding: 6px 34px;
+}
+.mainD p{
+    max-width: 500px;
+    text-align: left;
+}
+.subDiscover{
+    display: flex;
+    margin-top: 80px;
+}
+.dicoverImg{
+    position: relative;
+}
+.dicoverImg img{
+    width: 100%;
+}
+.dicoverImg p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: aliceblue;
+    font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+    .discover{
+        padding-top: 20pxs
+    }
+    .mainD{
+        flex-direction: column;
+    }
+    .wlcHedin span{
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .wlcItrol h2{
+        bottom: -16px;
+        font-size: 15px;
+        font-stretch: normal;
+    
+    }
+    .wlcItrol p{
+        margin-top: 30px;
+        margin-bottom: 28px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .subDiscover{
+        margin-top: 40px;
+    }
+    .dicoverImg p{
+        font-size: 14px;
+    }
+    
+}
